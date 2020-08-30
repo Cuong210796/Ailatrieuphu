@@ -1,0 +1,101 @@
+#wrapper {
+    border: 1px solid black;
+    width: 500px;
+    height: 700px;
+    background-color: #03024A;
+    margin-left: 35%;
+}
+
+#youWin {
+    color: white;
+    display: inline-block;
+    margin: 300px auto;
+    text-align: center;
+    font-size: 100px;
+}
+
+.hide {
+    display: none;
+}
+
+.hide img {
+    display: block;
+    margin: 30px auto;
+}
+
+.icon {
+    display: block;
+    margin: 10px auto;
+}
+
+#startBtn {
+    border: none;
+    padding: 10px 30px;
+    border-radius: 3px;
+    display: block;
+    margin: 200px auto;
+    background-color: #FFA500;
+    font-weight: bold;
+}
+
+#question {
+    width: 80%;
+    text-align: center;
+    border-radius: 7px;
+    border: 1px solid whitesmoke;
+    margin: 50px auto 50px auto;
+    padding: 5px;
+    background-color: #040404;
+    color: white;
+}
+
+#answers {
+    width: 80%;
+    margin: 0px auto 20px auto;
+}
+
+#answers>div {
+    border: 1px solid rgb(59, 65, 59);
+    text-align: start;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    padding: 5px;
+    color: white;
+}
+
+#answers>div.selected {
+    background-color: green;
+    color: white;
+}
+
+.blinking {
+    animation: blinkingText 1.2s infinite;
+}
+
+@keyframes blinkingText {
+    0% {
+        color: rgb(190, 231, 42);
+    }
+    49% {
+        color: rgb(224, 7, 7);
+    }
+    60% {
+        color: transparent;
+    }
+    99% {
+        color: transparent;
+    }
+    100% {
+        color: rgb(34, 31, 207);
+    }
+}
+
+#time {
+    margin-left: 230px;
+    width: 50px;
+    text-align: center;
+    background-color: blue;
+    color: white;
+    border-radius: 50%;
+    border: 1px solid white;
+}
