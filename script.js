@@ -29,6 +29,8 @@ class altp {
         this.currentQuestion = 0;
         this.currentAnswer = null;
 
+
+
         this.bgSound = new sound('bg.mp3');
         this.startSound = new sound('start.mp3');
         this.waitAnswerSound = new sound('wait_answer.mp3');
@@ -76,9 +78,6 @@ class altp {
             this.wrongSound.start(() => {
                 this.reset();
             });
-            // if (startTimer == 0) {
-            //     this.reset();
-            // }
         }
     }
 
@@ -101,47 +100,38 @@ class altp {
             this.questionBgSound.start();
         });
     }
-
-    // countDownTime() {
-    //     return setInterval(() => {
-    //         this.timeRemaining--;
-    //         document.getElementById('time-remaining').value = this.timeRemaining;
-    //         if (this.timeRemaining === 0) {
-    //             this.gameOver();
-    //         }
-    //     }, 1000);
-    // }
-
-    // gameOver() {
-    //     clearInterval(this.countDown);
-    //     this.audioController.gameOverSound();
-    //     document.getElementById('game-over').classList.add('visible');
-    // }
-
 }
 
 var game = new altp();
 
 function startTimer(duration, display) {
+    console.log(duration);
     var timer = duration,
         minutes, seconds;
-    setInterval(function() {
+    var count = game.currentQuestion;
+    var id = setInterval(function() {
         minutes = parseInt(timer / 60, 10);
         seconds = parseInt(timer % 60, 10);
 
         minutes = minutes < 10 ? "0" + minutes : minutes;
         seconds = seconds < 10 ? "0" + seconds : seconds;
-
         display.textContent = minutes + ":" + seconds;
-
-        if (--timer < 0) {
-            timer = duration;
+        timer--;
+        if (game.currentQuestion > count) {
+            clearInterval(id);
+        }
+        if (timer < 0) {
+            timer = 0;
+            game.ui.showScreen('welcomeScreen');
+            clearInterval(id);
         }
     }, 1000);
 }
 
-window.onload = function() {
-    var fiveMinutes = 60 * 0.5,
-        display = document.querySelector('#time');
+
+
+var clickBTN = function() {
+    var fiveMinutes = 60 * 0.5;
+    var display = document.querySelector('#time');
     startTimer(fiveMinutes, display);
 };

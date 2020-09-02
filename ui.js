@@ -27,6 +27,7 @@ class ui {
     }
 
     onClickAnswer(callback) {
+            clickBTN();
             document.getElementById('answer_1').addEventListener('click', () => callback(0));
             document.getElementById('answer_2').addEventListener('click', () => callback(1));
             document.getElementById('answer_3').addEventListener('click', () => callback(2));
