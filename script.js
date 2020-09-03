@@ -1,12 +1,51 @@
 const questions = [{
-        question: 'Đâu là đáp án đúng của bài toán 1 + 1 = ?',
+        question: 'Điền vào chỗ ... : Cây ngay không sợ...',
         answer: [
-            'A . 2',
-            'B . 3',
-            'C . 9',
-            'D .  0',
+            'A . Ngồi',
+            'B . Đứng',
+            'C . Sớm',
+            'D . Muộn',
+        ],
+        correct: 1
+    },
+    {
+        question: 'Trong các số do dưới đây, số đo nào bằng 25,08 km ?',
+        answer: [
+            'A . 2508000m',
+            'B . 2508m',
+            'C . 0.2508m',
+            'D . 25080m',
+        ],
+        correct: 3
+    },
+    {
+        question: 'Đơn vị đo dung lượng bộ nhớ nào lớn nhất ?',
+        answer: [
+            'A . GB',
+            'B . TB',
+            'C . MB',
+            'D . KB',
+        ],
+        correct: 1
+    }, {
+        question: 'Điền vào chỗ ... : Mạnh vì..., bạo vì tiền',
+        answer: [
+            'A . Gạo',
+            'B . Bạn',
+            'C . Vợ',
+            'D . Ba',
         ],
         correct: 0
+    },
+    {
+        question: 'Sat trong tiếng Anh là thứ mấy trong tuần ?',
+        answer: [
+            'A . Thứ ba',
+            'B . Thứ tư',
+            'C . Thứ sáu',
+            'D . Thứ bảy',
+        ],
+        correct: 3
     },
     {
         question: 'Vua nào đặt nhiều niên hiệu nhất lịch sử nước ta ?',
@@ -17,6 +56,96 @@ const questions = [{
             'D . Lý Nhân Tông',
         ],
         correct: 3
+    },
+    {
+        question: 'Người ta thường gọi quốc gia nào là đất nước mặt trời mọc ?',
+        answer: [
+            'A . Hàn Quốc',
+            'B . Nhật Bản',
+            'C . Italia',
+            'D . Pháp',
+        ],
+        correct: 1
+    },
+    {
+        question: 'Tác phẩm bắt đầu bằng tiếng trống thu không ?',
+        answer: [
+            'A . Hai đứa trẻ - Thạch Lam',
+            'B . Tắt đèn - Ngô Tất Tố',
+            'C . Đôi lứa xứng đôi - Nam Cao',
+            'D . Nỗi buồn chiến tranh - Bảo Ninh',
+        ],
+        correct: 0
+    },
+    {
+        question: 'Ngôi đền nào của Ấn Độ là biểu tượng tình yêu vĩnh cửu ?',
+        answer: [
+            'A . Ranakpur',
+            'B . Ramanathaswamy',
+            'C . Mahabodhi',
+            'D . Tạ Mahal',
+        ],
+        correct: 3
+    },
+    {
+        question: 'Lớp phủ bên ngoài lá có tác dụng hạn chế thoát hơi nước là ?',
+        answer: [
+            'A . Inox',
+            'B . Kẽm',
+            'C . Cutin',
+            'D . Bạc',
+        ],
+        correct: 2
+    },
+    {
+        question: 'Câu nói: "Đầu tôi chưa rơi xuống đất, xin bệ hạ đừng lo" là của ai ?',
+        answer: [
+            'A . Trần Quốc Toản',
+            'B . Trần Thủ Độ',
+            'C . Trần Quốc Tuấn',
+            'D . Nguyễn Trãi',
+        ],
+        correct: 1
+    },
+    {
+        question: 'Đất nước nào là quê hương của ông già tuyết ?',
+        answer: [
+            'A . Phần Lan',
+            'B . Thụy Điển',
+            'C . Pháp',
+            'D . Hà Lan',
+        ],
+        correct: 0
+    },
+    {
+        question: 'Lần đầu tiên nước ta dùng bộc phá 1000 kg thuốc nổ đánh giặc là ở đâu ?',
+        answer: [
+            'A . Tây Nguyên',
+            'B . Trường Sơn',
+            'C . Tây Bắc',
+            'D . Điện Biên Phủ',
+        ],
+        correct: 3
+    },
+    {
+        question: 'Sau chiến tranh thế giới 2, phong trào giải phóng dân tộc nổi lên mạnh nhất ở đâu ?',
+        answer: [
+            'A . Châu Á',
+            'B . Châu Âu',
+            'C . Châu Phi',
+            'D . Châu Đại Dương',
+        ],
+        correct: 3
+    },
+    {
+        question: 'Phim hoạt hình đầu tiên được công chiếu vào thời gian nào ?',
+        answer: [
+            'A . 28-10-1892',
+            'B . 21-2-1873',
+            'C . 1-6-1912',
+            'D . 12-4-1931',
+        ],
+        correct: 0
     },
 ];
 
