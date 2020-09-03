@@ -1,5 +1,5 @@
 const questions = [{
-        question: 'Điền vào chỗ ... : Cây ngay không sợ...',
+        question: 'Điền vào chỗ ... : Cây ngay không sợ chết ...',
         answer: [
             'A . Ngồi',
             'B . Đứng',
@@ -150,7 +150,6 @@ const questions = [{
 ];
 
 
-
 class altp {
     constructor() {
         this.ui = new ui();
@@ -251,7 +250,9 @@ function startTimer(duration, display) {
         }
         if (timer < 0) {
             timer = 0;
-            game.ui.showScreen('welcomeScreen');
+            game.wrongSound.start(() => {
+                game.reset();
+            });
             clearInterval(id);
         }
     }, 1000);
